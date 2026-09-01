@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1e9;
+    color: #182525;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(10, 22, 22, .60),
+            rgba(10, 22, 22, .70)
+        ),
+        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=90")
+        center / cover;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 28px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo,
+.footer-logo {
+    color: white;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.logo span,
+.footer-logo span {
+    color: #e6ad45;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #e6ad45;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.eyebrow {
+    color: #e6ad45;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    max-width: 900px;
+
+    font-size: clamp(55px, 9vw, 110px);
+    line-height: .9;
+    letter-spacing: -5px;
+
+    margin-bottom: 35px;
+}
+
+.hero-text {
+    max-width: 540px;
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #e1e6e4;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 16px 25px;
+
+    color: #172323;
+    background: #e6ad45;
+
+    border-radius: 50px;
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    background: white;
+}
+
+.scroll {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 35px;
+
+    color: #c8cfcc;
+    font-size: 12px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    max-width: 850px;
+    margin: auto;
+    padding: 130px 25px;
+
+    text-align: center;
+}
+
+.intro h2,
+.section-heading h2,
+.contacto h2 {
+    font-size: clamp(40px, 6vw, 70px);
+    line-height: 1;
+    letter-spacing: -3px;
+
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    max-width: 650px;
+    margin: auto;
+
+    color: #687474;
+    font-size: 17px;
+}
+
+
+/* =========================
+   DESTINOS
+========================= */
+
+.destinos {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+    padding-bottom: 130px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    margin-bottom: 0;
+}
+
+.counter {
+    color: #858c89;
+    font-weight: bold;
+}
+
+
+/* GRID */
+
+.grid-destinos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+/* CARD */
+
+.card {
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(20, 35, 35, .10);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px rgba(20, 35, 35, .18);
+}
+
+
+/* IMAGEN */
+
+.image-box {
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform .6s ease;
+}
+
+.card:hover .image-box img {
+    transform: scale(1.06);
+}
+
+.number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    display: grid;
+    place-items: center;
+
+    background: rgba(20, 30, 30, .75);
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* CONTENIDO */
+
+.card-content {
+    padding: 30px;
+}
+
+.country {
+    color: #b57b20;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    font-size: 38px;
+    line-height: 1;
+
+    margin-bottom: 18px;
+}
+
+.card-content > p:not(.country):not(.location) {
+    color: #697272;
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+}
+
+.location {
+    color: #394747;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #172323;
+    font-size: 14px;
+    font-weight: 800;
+
+    transition: .3s;
+}
+
+.card a:hover {
+    color: #b57b20;
+}
+
+
+/* =========================
+   EXPERIENCIAS
+========================= */
+
+.experiencias {
+    padding: 150px 25px;
+
+    background: #203333;
+    color: white;
+
+    text-align: center;
+}
+
+.experience-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.experiencias h2 {
+    font-size: clamp(45px, 7vw, 80px);
+    line-height: .95;
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.experiencias p:not(.eyebrow) {
+    max-width: 650px;
+    margin: auto;
+
+    color: #cbd4d1;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    padding: 130px 25px;
+
+    background: #e6e1d6;
+
+    text-align: center;
+}
+
+.contacto h2 {
+    max-width: 850px;
+    margin: auto auto 20px;
+}
+
+.contact-text {
+    color: #697272;
+    margin-bottom: 35px;
+}
+
+.contacto form {
+    width: 100%;
+    max-width: 600px;
+
+    margin: auto;
+
+    display: grid;
+    gap: 14px;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+
+    padding: 17px 18px;
+
+    border: 1px solid #c9c4b8;
+    border-radius: 12px;
+
+    background: #f8f6f0;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+    border-color: #b57b20;
+}
+
+.contacto textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contacto button {
+    padding: 17px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #203333;
+    color: white;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.contacto button:hover {
+    background: #b57b20;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 65px 25px;
+
+    background: #101a1a;
+    color: white;
+
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #9fa8a6;
+    margin-bottom: 20px;
+}
+
+footer small {
+    color: #606a68;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 750px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+        letter-spacing: -3px;
+    }
+
+    .hero-content {
+        padding: 50px 0;
+    }
+
+    .grid-destinos {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .image-box {
+        height: 260px;
+    }
+
+    .card h3 {
+        font-size: 32px;
+    }
+
+}

@@ -3,42 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Destinos turísticos increíbles para descubrir y visitar.">
-    <title>Destino Mundo | Turismo</title>
+
+    <meta name="description" content="Descubre los mejores destinos turísticos del mundo.">
+
+    <title>DestinoMundo | Viaja y descubre</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <!-- NAVEGACIÓN -->
     <header class="hero" id="inicio">
 
-        <nav>
-            <a href="#inicio" class="logo">DESTINO<span>MUNDO</span></a>
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                DESTINO<span>MUNDO</span>
+            </a>
 
             <div class="nav-links">
                 <a href="#destinos">Destinos</a>
                 <a href="#experiencias">Experiencias</a>
                 <a href="#contacto">Contacto</a>
             </div>
+
         </nav>
 
         <div class="hero-content">
-            <p class="etiqueta">DESCUBRE • VIAJA • EXPLORA</p>
+
+            <p class="eyebrow">DESCUBRE · VIAJA · EXPLORA</p>
 
             <h1>
                 El mundo
                 <br>
-                está esperando.
+                te está esperando.
             </h1>
 
-            <p>
-                Descubre diez destinos extraordinarios
-                y encuentra inspiración para tu próxima aventura.
+            <p class="hero-text">
+                Inspírate, descubre nuevos lugares y encuentra
+                el destino perfecto para tu próxima aventura.
             </p>
 
-            <a href="#destinos" class="boton">
+            <a href="#destinos" class="btn">
                 Explorar destinos
+                <span>→</span>
             </a>
+
+        </div>
+
+        <div class="scroll">
+            ↓ Desliza para descubrir
         </div>
 
     </header>
@@ -46,114 +61,477 @@
 
     <main>
 
-        <section class="introduccion">
+        <!-- INTRODUCCIÓN -->
+        <section class="intro">
 
-            <p class="etiqueta">INSPIRACIÓN</p>
+            <p class="eyebrow">INSPIRACIÓN PARA VIAJAR</p>
 
             <h2>
-                Diez destinos,
+                Diez lugares.
                 <br>
-                muchas aventuras.
+                Infinitas historias.
             </h2>
 
-            <p>
-                Conoce lugares llenos de cultura, naturaleza,
-                historia y experiencias únicas alrededor del mundo.
+            <p class="intro-text">
+                Desde antiguas ciudades hasta paraísos naturales,
+                descubre algunos de los destinos más fascinantes
+                que nuestro planeta tiene para ofrecer.
             </p>
 
         </section>
 
 
+        <!-- DESTINOS -->
         <section class="destinos" id="destinos">
 
-            <div class="titulo-seccion">
+            <div class="section-heading">
+
                 <div>
-                    <p class="etiqueta">DESTINOS TURÍSTICOS</p>
-                    <h2>10 lugares para descubrir</h2>
+                    <p class="eyebrow">DESTINOS TURÍSTICOS</p>
+                    <h2>Explora el mundo</h2>
                 </div>
 
-                <span>01 — 10</span>
+                <p class="counter">01 — 10</p>
+
             </div>
 
-            <div class="tarjetas">
 
-                <article class="tarjeta">
-                    <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=900&q=80" alt="Santorini, Grecia">
+            <div class="grid-destinos">
 
-                    <div class="contenido-tarjeta">
-                        <span>GRECIA</span>
+
+                <!-- 01 -->
+                <article class="card">
+
+                    <div class="image-box">
+                        <img
+                            src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1000&q=85"
+                            alt="Santorini, Grecia">
+                        <span class="number">01</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <p class="country">GRECIA · EUROPA</p>
+
                         <h3>Santorini</h3>
-                        <p>Una isla mediterránea famosa por sus casas blancas y sus increíbles atardeceres.</p>
-                        <a href="https://es.wikipedia.org/wiki/Santorini" target="_blank">Descubrir →</a>
+
+                        <p>
+                            Sus casas blancas, cúpulas azules y
+                            atardeceres sobre el mar Egeo convierten
+                            esta isla en uno de los destinos más
+                            reconocidos del Mediterráneo.
+                        </p>
+
+                        <p class="location">
+                            📍 Islas Cícladas, Grecia
+                        </p>
+
+                        <a href="https://es.wikipedia.org/wiki/Santorini"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Descubrir destino →
+                        </a>
+
                     </div>
+
                 </article>
 
 
-                <article class="tarjeta">
-                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80" alt="Kioto, Japón">
+                <!-- 02 -->
+                <article class="card">
 
-                    <div class="contenido-tarjeta">
-                        <span>JAPÓN</span>
+                    <div class="image-box">
+                        <img
+                            src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=85"
+                            alt="Kioto, Japón">
+                        <span class="number">02</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <p class="country">JAPÓN · ASIA</p>
+
                         <h3>Kioto</h3>
-                        <p>Templos, jardines y tradiciones que representan la cultura japonesa.</p>
-                        <a href="https://es.wikipedia.org/wiki/Kioto" target="_blank">Descubrir →</a>
+
+                        <p>
+                            Antigua capital japonesa reconocida
+                            por sus templos, jardines tradicionales,
+                            santuarios y una cultura que conserva
+                            siglos de historia.
+                        </p>
+
+                        <p class="location">
+                            📍 Kansai, Japón
+                        </p>
+
+                        <a href="https://es.wikipedia.org/wiki/Kioto"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Descubrir destino →
+                        </a>
+
                     </div>
+
                 </article>
 
-                <article class="tarjeta">
-    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80" alt="París, Francia">
-    <div class="contenido-tarjeta">
-        <span>FRANCIA</span>
-        <h3>París</h3>
-        <p>Arte, historia, arquitectura y gastronomía en una ciudad inolvidable.</p>
-        <a href="https://es.wikipedia.org/wiki/Par%C3%ADs" target="_blank">Descubrir →</a>
-    </div>
-</article>
 
-<article class="tarjeta">
-    <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=900&q=80" alt="Nueva York, Estados Unidos">
-    <div class="contenido-tarjeta">
-        <span>ESTADOS UNIDOS</span>
-        <h3>Nueva York</h3>
-        <p>Una ciudad vibrante llena de cultura, entretenimiento y grandes espacios urbanos.</p>
-        <a href="https://es.wikipedia.org/wiki/Nueva_York" target="_blank">Descubrir →</a>
-    </div>
-</article>
+                <!-- 03 -->
+                <article class="card">
+
+                    <div class="image-box">
+                        <img
+                            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=85"
+                            alt="París, Francia">
+                        <span class="number">03</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <p class="country">FRANCIA · EUROPA</p>
+
+                        <h3>París</h3>
+
+                        <p>
+                            Ciudad mundialmente famosa por su arte,
+                            arquitectura, historia, gastronomía y
+                            monumentos como la Torre Eiffel.
+                        </p>
+
+                        <p class="location">
+                            📍 Norte de Francia
+                        </p>
+
+                        <a href="https://es.wikipedia.org/wiki/Par%C3%ADs"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Descubrir destino →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 04 -->
+                <article class="card">
+
+                    <div class="image-box">
+                        <img
+                            src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=1000&q=85"
+                            alt="Nueva York, Estados Unidos">
+                        <span class="number">04</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <p class="country">EE. UU. · AMÉRICA</p>
+
+                        <h3>Nueva York</h3>
+
+                        <p>
+                            Una de las ciudades más importantes del
+                            mundo, conocida por sus rascacielos,
+                            museos, parques y enorme diversidad cultural.
+                        </p>
+
+                        <p class="location">
+                            📍 Costa este de Estados Unidos
+                        </p>
+
+                        <a href="https://es.wikipedia.org/wiki/Nueva_York"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Descubrir destino →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 05 -->
+                <article class="card">
+
+                    <div class="image-box">
+                        <img
+                            src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=1000&q=85"
+                            alt="Machu Picchu, Perú">
+                        <span class="number">05</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <p class="country">PERÚ · AMÉRICA</p>
+
+                        <h3>Machu Picchu</h3>
+
+                        <p>
+                            Antigua ciudadela inca ubicada entre
+                            montañas de los Andes y considerada
+                            uno de los mayores tesoros arqueológicos.
+                        </p>
+
+                        <p class="location">
+                            📍 Cusco, Perú
+                        </p>
+
+                        <a href="https://es.wikipedia.org/wiki/Machu_Picchu"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Descubrir destino →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 06 -->
+                <article class="card">
+
+                    <div class="image-box">
+                        <img
+                            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=85"
+                            alt="Dubái">
+                        <span class="number">06</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <p class="country">EMIRATOS ÁRABES · ASIA</p>
+
+                        <h3>Dubái</h3>
+
+                        <p>
+                            Ciudad moderna que combina desierto,
+                            arquitectura futurista, enormes
+                            rascacielos y una intensa vida urbana.
+                        </p>
+
+                        <p class="location">
+                            📍 Golfo Pérsico
+                        </p>
+
+                        <a href="https://es.wikipedia.org/wiki/Dub%C3%A1i"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Descubrir destino →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 07 -->
+                <article class="card">
+
+                    <div class="image-box">
+                        <img
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85"
+                            alt="Bora Bora">
+                        <span class="number">07</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <p class="country">POLINESIA · OCEANÍA</p>
+
+                        <h3>Bora Bora</h3>
+
+                        <p>
+                            Paraíso tropical de aguas cristalinas,
+                            playas de arena blanca y paisajes
+                            rodeados por una espectacular laguna.
+                        </p>
+
+                        <p class="location">
+                            📍 Pacífico Sur
+                        </p>
+
+                        <a href="https://es.wikipedia.org/wiki/Bora_Bora"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Descubrir destino →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 08 -->
+                <article class="card">
+
+                    <div class="image-box">
+                        <img
+                            src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1000&q=85"
+                            alt="Capadocia, Turquía">
+                        <span class="number">08</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <p class="country">TURQUÍA · EURASIA</p>
+
+                        <h3>Capadocia</h3>
+
+                        <p>
+                            Región famosa por sus formaciones
+                            rocosas, ciudades subterráneas y
+                            espectaculares recorridos en globo.
+                        </p>
+
+                        <p class="location">
+                            📍 Anatolia central, Turquía
+                        </p>
+
+                        <a href="https://es.wikipedia.org/wiki/Capadocia"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Descubrir destino →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 09 -->
+                <article class="card">
+
+                    <div class="image-box">
+                        <img
+                            src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1000&q=85"
+                            alt="Cartagena de Indias">
+                        <span class="number">09</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <p class="country">COLOMBIA · AMÉRICA</p>
+
+                        <h3>Cartagena</h3>
+
+                        <p>
+                            Ciudad caribeña de gran importancia
+                            histórica, famosa por sus murallas,
+                            arquitectura colonial y ambiente tropical.
+                        </p>
+
+                        <p class="location">
+                            📍 Costa Caribe, Colombia
+                        </p>
+
+                        <a href="https://es.wikipedia.org/wiki/Cartagena_de_Indias"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Descubrir destino →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 10 -->
+                <article class="card">
+
+                    <div class="image-box">
+                        <img
+                            src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1000&q=85"
+                            alt="Marrakech, Marruecos">
+                        <span class="number">10</span>
+                    </div>
+
+                    <div class="card-content">
+
+                        <p class="country">MARRUECOS · ÁFRICA</p>
+
+                        <h3>Marrakech</h3>
+
+                        <p>
+                            Ciudad histórica conocida por sus
+                            mercados, palacios, jardines y la
+                            emblemática plaza Jemaa el-Fna.
+                        </p>
+
+                        <p class="location">
+                            📍 Marruecos, África
+                        </p>
+
+                        <a href="https://es.wikipedia.org/wiki/Marrakech"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Descubrir destino →
+                        </a>
+
+                    </div>
+
+                </article>
 
             </div>
 
         </section>
 
 
+        <!-- EXPERIENCIAS -->
         <section class="experiencias" id="experiencias">
 
-            <p class="etiqueta">EXPERIENCIAS</p>
+            <div class="experience-content">
 
-            <h2>Viajar es mucho más que conocer un lugar.</h2>
+                <p class="eyebrow">LA EXPERIENCIA</p>
 
-            <p>
-                Cada destino permite descubrir nuevas culturas,
-                sabores, paisajes y formas de vivir.
-            </p>
+                <h2>
+                    Viajar no es escapar.
+                    <br>
+                    Es descubrir.
+                </h2>
+
+                <p>
+                    Cada viaje nos permite conocer nuevas culturas,
+                    probar nuevos sabores, observar otros paisajes
+                    y regresar a casa con historias que contar.
+                </p>
+
+            </div>
 
         </section>
 
 
+        <!-- CONTACTO -->
         <section class="contacto" id="contacto">
 
-            <p class="etiqueta">CONTACTO</p>
+            <p class="eyebrow">PLANEA TU AVENTURA</p>
 
             <h2>¿Cuál será tu próximo destino?</h2>
 
+            <p class="contact-text">
+                Cuéntanos qué lugar te gustaría conocer.
+            </p>
+
             <form action="mailto:ejemplo@correo.com" method="post">
 
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    required>
 
-                <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+                <input
+                    type="email"
+                    name="correo"
+                    placeholder="Tu correo electrónico"
+                    required>
 
-                <textarea name="mensaje" placeholder="Cuéntanos qué destino te gustaría visitar" required></textarea>
+                <textarea
+                    name="mensaje"
+                    placeholder="Escribe tu destino favorito..."
+                    required></textarea>
 
-                <button type="submit">Enviar mensaje</button>
+                <button type="submit">
+                    Enviar mensaje →
+                </button>
 
             </form>
 
@@ -162,13 +540,20 @@
     </main>
 
 
+    <!-- FOOTER -->
     <footer>
 
-        <h2>DestinoMundo</h2>
+        <div class="footer-logo">
+            DESTINO<span>MUNDO</span>
+        </div>
 
-        <p>Descubre lugares. Crea recuerdos.</p>
+        <p>
+            Descubre lugares. Crea recuerdos.
+        </p>
 
-        <small>Proyecto web • 2026</small>
+        <small>
+            Proyecto académico · 2026
+        </small>
 
     </footer>
 
