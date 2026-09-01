@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1e9;
+    color: #202828;
+}
+/* ENCABEZADO */
+.hero {
+    min-height: 90vh;
+    color: white;
+    background:
+        linear-gradient(rgba(15, 25, 25, .65), rgba(15, 25, 25, .65)),
+        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+}
+nav {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.logo span {
+    color: #e4ad45;
+}
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+.hero-content {
+    width: 90%;
+    max-width: 1100px;
+    margin: 150px auto 0;
+}
+.etiqueta {
+    color: #d89f35;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.hero h1 {
+    font-size: clamp(55px, 9vw, 105px);
+    line-height: .9;
+    margin-bottom: 30px;
+}
+.hero-content > p:not(.etiqueta) {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.boton {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #e4ad45;
+    color: #202828;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+/* INTRODUCCIÓN */
+.introduccion {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 100px 20px;
+    text-align: center;
+}
+.introduccion h2,
+.titulo-seccion h2,
+.contacto h2,
+.experiencias h2 {
+    font-size: clamp(35px, 5vw, 60px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+.introduccion > p:last-child,
+.experiencias > p:last-child {
+    color: #687070;
+    font-size: 17px;
+    line-height: 1.7;
+}
+/* DESTINOS */
+.destinos {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.titulo-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 40px;
+}
+.titulo-seccion > span {
+    color: #777;
+    font-weight: bold;
+}
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.tarjeta {
+    overflow: hidden;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+.tarjeta img {
+    width: 100%;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+}
+.contenido-tarjeta {
+    padding: 25px;
+}
+.contenido-tarjeta > span {
+    color: #b47c1d;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.contenido-tarjeta h3 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+.contenido-tarjeta p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.contenido-tarjeta a {
+    color: #202828;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* EXPERIENCIAS */
+.experiencias {
+    padding: 110px 20px;
+    text-align: center;
+    background: #263838;
+    color: white;
+}
+.experiencias h2 {
+    max-width: 800px;
+    margin: auto auto 25px;
+}
+.experiencias > p:last-child {
+    max-width: 600px;
+    margin: auto;
+    color: #cbd1d1;
+}
+/* CONTACTO */
+.contacto {
+    padding: 100px 20px;
+    text-align: center;
+    background: #e3ded2;
+}
+.contacto h2 {
+    max-width: 800px;
+    margin: auto;
+}
+.contacto form {
+    width: 100%;
+    max-width: 600px;
+    margin: 35px auto 0;
+    display: grid;
+    gap: 15px;
+}
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #c8c3b8;
+    border-radius: 8px;
+    background: #faf9f5;
+    font-family: inherit;
+}
+.contacto textarea {
+    min-height: 130px;
+}
+.contacto button {
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #202828;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* FOOTER */
+footer {
+    padding: 60px 20px;
+    text-align: center;
+    background: #121b1c;
+    color: white;
+}
+footer p {
+    color: #aaa;
+    margin: 10px 0 20px;
+}
+footer small {
+    color: #666;
+}
+/* CELULARES */
+@media (max-width: 700px) {
+    .nav-links {
+        display: none;
+    }
+    .hero-content {
+        margin-top: 100px;
+    }
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+    .titulo-seccion {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
