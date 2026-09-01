@@ -381,3 +381,23 @@ nav a::after {
 nav a:hover::after {
     width: 100%;
 }
+
+.card:nth-child(2n) {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(0, 217, 255, 0.08),
+            transparent 45%
+        ),
+        var(--surface);
+}
+
+.card:nth-child(3n) {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 78, 205, 0.08),
+            transparent 45%
+        ),
+        var(--surface);
+}
