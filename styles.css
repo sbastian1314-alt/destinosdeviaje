@@ -227,3 +227,25 @@ footer {
         font-size: 3.2rem;
     }
 }
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    right: -60px;
+    background: var(--primary);
+    filter: blur(55px);
+    opacity: 0.25;
+}
+
+.card > * {
+    position: relative;
+    z-index: 1;
+}
