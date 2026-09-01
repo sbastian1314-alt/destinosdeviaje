@@ -270,3 +270,23 @@ footer {
     background: var(--accent);
     color: white;
 }
+
+section + section {
+    position: relative;
+}
+
+section + section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 7%;
+    right: 7%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(124, 92, 255, 0.5),
+        rgba(0, 217, 255, 0.5),
+        transparent
+    );
+}
