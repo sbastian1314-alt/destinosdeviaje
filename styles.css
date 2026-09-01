@@ -322,3 +322,29 @@ section + section::before {
         transform: translateY(0);
     }
 }
+
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero::before {
+    width: 400px;
+    height: 400px;
+    right: -120px;
+    top: 10%;
+    background: rgba(124, 92, 255, 0.15);
+    filter: blur(80px);
+}
+
+.hero::after {
+    width: 300px;
+    height: 300px;
+    left: -100px;
+    bottom: 0;
+    background: rgba(255, 78, 205, 0.12);
+    filter: blur(80px);
+}
