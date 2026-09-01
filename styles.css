@@ -265,3 +265,8 @@ footer {
     border-color: var(--secondary);
     transform: translateY(-3px);
 }
+
+::selection {
+    background: var(--accent);
+    color: white;
+}
