@@ -417,3 +417,22 @@ nav a:hover::after {
     );
     border-radius: 10px;
 }
+
+@media (max-width: 700px) {
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn,
+    .btn-secondary {
+        padding: 12px 20px;
+    }
+}
