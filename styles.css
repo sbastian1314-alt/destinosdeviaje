@@ -522,3 +522,12 @@ footer small {
     }
 
 }
+.btn,
+.contacto button {
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.contacto button:hover {
+    transform: translateY(-3px);
+}
