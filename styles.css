@@ -290,3 +290,19 @@ section + section::before {
         transparent
     );
 }
+
+.hero-content {
+    animation: heroEnter 0.9s ease both;
+}
+
+@keyframes heroEnter {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
