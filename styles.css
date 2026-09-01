@@ -462,3 +462,20 @@ nav a:hover::after {
 .btn:hover::before {
     left: 130%;
 }
+
+footer {
+    background: rgba(17, 22, 42, 0.5);
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--secondary);
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: var(--accent);
+}
